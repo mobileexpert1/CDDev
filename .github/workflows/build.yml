@@ -41,7 +41,7 @@ jobs:
 
       - name: Build Debug APK
         env:
-          JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.x/x64
+          JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.14-7/x64
         run: ./gradlew assembleDebug
 
       - name: Upload APK artifact
