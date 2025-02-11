@@ -63,6 +63,7 @@ fun SplashScreen(navHost: NavHostController){
                         .clickable { Log.e("welssssd","Welcome to splash") },
                     style = TextStyle(fontWeight = FontWeight.Bold, fontSize = 35.sp, color = Color.White)
                 )
+
             }
         }
     )
