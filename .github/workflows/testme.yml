@@ -33,6 +33,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
+
       # Build the app (debug build)
       - name: Build Debug APK
         run: ./gradlew assembleDebug
