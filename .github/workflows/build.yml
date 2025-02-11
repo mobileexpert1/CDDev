@@ -39,6 +39,8 @@ jobs:
       - name: Set execute permissions for gradlew
         run: chmod +x ./gradlew
 
+
+
       - name: Build Debug APK
         env:
           JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/17.0.14-7/x64
