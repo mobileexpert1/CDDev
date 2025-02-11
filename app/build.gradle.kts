@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.kotlinSerialization)
-    id("com.google.gms.google-services")
+  //  id("com.google.gms.google-services")
 }
 
 android {
@@ -80,6 +80,8 @@ dependencies {
     debugImplementation(libs.client.android)
     debugImplementation(libs.negotiation)
     debugImplementation(libs.serialization)
-    implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
-    implementation("com.google.firebase:firebase-analytics")
+    //implementation(platform("com.google.firebase:firebase-bom:33.8.0"))
+   // implementation("com.google.firebase:firebase-analytics")
+   // implementation ("com.google.android.gms:play-services-measurement-api:22.2.0")
+    //implementation ("androidx.compose.compiler:compiler:1.5.1")
 }
