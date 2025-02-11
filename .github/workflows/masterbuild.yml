@@ -3,15 +3,15 @@ name: Build
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
- 
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -30,11 +30,14 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gradle-
 
+      - name: Change directory to where gradlew is located
+        run: cd ${{ github.workspace }}
+
       - name: Build Debug APK
         run: ./gradlew assembleDebug
 
       - name: Upload APK artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
