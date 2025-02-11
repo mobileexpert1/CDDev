@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "738438751211",
+    "project_id": "demoapi-45487",
+    "storage_bucket": "demoapi-45487.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738438751211:android:c0a57cb4d1ea07d1c46fae",
+        "android_client_info": {
+          "package_name": "com.composetut"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1pq1pom1Mz56im316BkKDRgAN24-anCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
